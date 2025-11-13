@@ -29,7 +29,7 @@ logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
 
-def load_params(params_path: str) ->dict:
+def load_params(params_path: str) -> dict:
     try:
         with open(params_path,'r') as file:
             params = yaml.safe_load(file)
